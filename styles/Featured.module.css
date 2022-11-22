@@ -1,0 +1,130 @@
+.container {
+  height: calc(100vh - 100px);
+  background-color: #ef233c;
+  overflow: hidden;
+  position: relative;
+}
+
+.arrowContainer {
+  position: absolute;
+  width: 5%;
+  height: 10%;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  cursor: pointer;
+  z-index: 4;
+}
+
+.wrapper {
+  width: 300vw;
+  height: 100%;
+  display: flex;
+  transition: all 1.5s ease-in-out ;
+}
+
+.imgContainer {
+  width: 100vw;
+  height: 100%;
+  position: relative;
+}
+
+.btn1{
+  background-color: transparent;
+  width: 20px;
+  height: 20px;
+  z-index: 2;
+  margin-right: 15px;
+  border-radius: 50%;
+  border: 2px solid whitesmoke;
+
+}
+
+.activeBtn{
+  background-color: white;
+  width: 20px;
+  height: 20px;
+  z-index: 2;
+  margin-right: 15px;
+  border-radius: 50%;
+
+}
+.btnDiv{
+  position: absolute;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  margin-bottom:10px ;
+  padding-bottom: 20px;
+  height: 100%;
+  top: 0;
+  bottom: 0;
+
+  margin: auto;
+  cursor: pointer;
+  z-index: 2;
+}
+
+
+@media screen and (max-width: 540px) {
+  .container{
+    height: 50vh;
+  }
+  .btn1{
+    width: 12px;
+    height: 12px;
+    margin-right: 12px;
+  
+  }
+  .activeBtn{
+    width: 12px;
+    height: 12px;
+    margin-right: 12px;
+  
+  }
+  .btnDiv{ 
+    padding-bottom: 10px;
+  }
+}
+
+@media screen and (min-width: 540px) and (max-width: 780px) {
+
+  .btn1{
+    width: 12px;
+    height: 12px;
+    margin-right: 12px;
+  
+  }
+  .activeBtn{
+    width: 12px;
+    height: 12px;
+    margin-right: 12px;
+  
+  }
+  .btnDiv{ 
+    padding-bottom: 10px;
+  }
+
+
+}
+
+@media screen and (min-width: 780px) and (max-width: 1024px) {
+ 
+  .btn1{
+    width: 15px;
+    height: 15px;
+    margin-right: 15px;
+  
+  }
+  .activeBtn{
+    width: 15px;
+    height: 15px;
+    margin-right: 15px;
+  
+  }
+  .btnDiv{ 
+    padding-bottom: 15px;
+  }
+
+}

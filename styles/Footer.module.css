@@ -1,0 +1,75 @@
+.container {
+  height: calc(100vh - 100px);
+  background-color: #222;
+  display: flex;
+}
+.logo{
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.logospan{
+  border-radius: 50%;
+  border: none;
+}
+.linLogo{
+  background-color: black;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+
+.item {
+  flex: 1;
+  position: relative;
+  display: flex;
+}
+
+.item:last-child {
+  flex: 2;
+  padding: 50px;
+  justify-content: space-between;
+}
+
+.card {
+  flex: 1;
+  padding: 0 20px;
+}
+
+.title {
+  font-size: 18px;
+  color: #e09f3e;
+}
+
+.text {
+  color: #edf2f4;
+}
+
+.motto {
+  color: #edf2f4;
+}
+
+@media screen and (max-width: 540px) {
+  .container {
+    height: auto;
+    text-align: center;
+  }
+  .item:first-child {
+    display: none;
+  }
+  
+  .item {
+    flex-direction: column;
+  }
+
+  .title {
+    font-size: 24px;
+  }
+
+  .text {
+    font-size: 20px;
+  }
+  .motto {
+    font-size: 20px !important;
+  }
+}
